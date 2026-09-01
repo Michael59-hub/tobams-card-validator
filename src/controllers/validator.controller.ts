@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { validateLuhn } from "../utils/luhn";
 
 export const validateCard = (req: Request, res: Response) => {
   const { cardNumber } = req.body;
@@ -6,8 +7,7 @@ export const validateCard = (req: Request, res: Response) => {
         return res.status(400).json({ error: "Card number is required" });
     }
 
-    // Validate card number using Luhn algorithm
-    const isValid = luhnCheck(cardNumber);
-    return res.json({ valid: isValid });
+    const isValid = validateLuhn(cardNumber);
+    res.json({ valid: isValid });
 }
 

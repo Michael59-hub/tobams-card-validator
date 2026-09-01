@@ -1,0 +1,1 @@
+export type CardBrand = 'Visa' | 'Mastercard' | 'American Express' | 'Discover' | 'Verve' | 'Unknown';
