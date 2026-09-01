@@ -1,0 +1,13 @@
+node_modules/
+
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+*.log
+
+# Build Outputs & Cache
+dist/
+build/
+.cache/
+tsconfig.tsbuildinfo
