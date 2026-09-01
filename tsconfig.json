@@ -1,23 +1,15 @@
 {
   "compilerOptions": {
-    /* Base Options */
-    "target": "ES2022",                          /* Modern JS features supported by Node LTS */
-    "module": "CommonJS",
-    "moduleResolution": "node10",   
-    "ignoreDeprecations": "6.0",           /* Resolves modules using Node's ESM algorithm */
-
-    /* Emit / Output */
+    "target": "ES2022",                          
+    "module": "node16",
+    "moduleResolution": "node16",             
     "outDir": "./dist",                         
     "rootDir": "./src",                          
     "sourceMap": true,                           
-
-    /* Type Checking & Strictness */
-    "strict": true,                              /* Enable all strict type-checking options */
-    "noImplicitAny": true,                       /* Raise error on expressions with implied 'any' */
-    "strictNullChecks": true,                    /* Enable strict null/undefined checks */
-
-    /* Interop & Performance */
-    "esModuleInterop": true,                     /* Enables compatibility with CommonJS modules */
+    "strict": true,                              
+    "noImplicitAny": true,                       
+    "strictNullChecks": true,                    
+    "esModuleInterop": true                  
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
