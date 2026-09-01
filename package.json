@@ -18,7 +18,7 @@
       "onFail": "download"
     }
   },
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "express": "^5.2.1"
   },

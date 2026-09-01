@@ -2,8 +2,9 @@
   "compilerOptions": {
     /* Base Options */
     "target": "ES2022",                          /* Modern JS features supported by Node LTS */
-    "module": "NodeNext",                        /* Standard for modern ESM modules in Node */
-    "moduleResolution": "NodeNext",              /* Resolves modules using Node's ESM algorithm */
+    "module": "CommonJS",
+    "moduleResolution": "node10",   
+    "ignoreDeprecations": "6.0",           /* Resolves modules using Node's ESM algorithm */
 
     /* Emit / Output */
     "outDir": "./dist",                         
