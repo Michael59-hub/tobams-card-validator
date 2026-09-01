@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { validateLuhn } from "../utils/luhn";
 import { CardService } from "../services/card.service";
 
 const cardService = new CardService();
